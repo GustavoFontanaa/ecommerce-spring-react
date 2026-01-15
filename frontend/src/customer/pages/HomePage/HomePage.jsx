@@ -1,10 +1,18 @@
 import MainCarousel from '../../components/HomeCarousel/MainCarousel'
+import HomeSectionCarousel from '../../components/HomeSectionCarousel/HomeSectionCarousel'
 
 const HomePage = () => {
   return (
     <div>
       <MainCarousel />
-      <div>other section</div>
+
+      <div className='flex flex-col space-y-10 py-20 justify-center px-5 lg:px-10'>
+        <HomeSectionCarousel />
+        <HomeSectionCarousel />
+        <HomeSectionCarousel />
+        <HomeSectionCarousel />
+        <HomeSectionCarousel />
+      </div>
     </div>
   )
 }
